@@ -30,10 +30,11 @@ def toggle_youtube():
 
 def main():
     print("🎧 SpotifyHotkey is running.")
-    print("    Press Shift+5 to Play/Pause Spotify.")
+    print("    Press Shift+F1 to Play/Pause Spotify.")
+    print("    Press Shift+y to Play/Pause YouTube.")
     print("    Press ESC to quit.")
 
-    keyboard.add_hotkey("shift+5", toggle_play_pause)
+    keyboard.add_hotkey("shift+F1", toggle_play_pause)
     keyboard.add_hotkey('shift+y', toggle_youtube, suppress=True)
 
 
@@ -86,3 +87,4 @@ def toggle_play_pause():
 
 if __name__ == "__main__":
     main()
+
